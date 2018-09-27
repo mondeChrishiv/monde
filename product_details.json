@@ -1,4 +1,6 @@
-    "productId": 1,
-    "weight": 30,
-    "title": "Paneer Tikka Flavour",
-    "price": 72
+{
+  "productId": 1,
+  "weight": 30,
+  "title": "Paneer Tikka Flavour",
+  "price": 72
+}
