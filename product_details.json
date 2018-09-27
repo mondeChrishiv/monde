@@ -1,14 +1,14 @@
 [
   {
     "productId": 1,
-    "weight": "30g",
+    "weight": 30,
     "title": "Paneer Tikka Flavour",
-    "price": "Rs. 10"
+    "price": 72
   },
   {
     "productId": 2,
-    "weight": "30g",
+    "weight": 30,
     "title": "Cheese & Herb Flavour",
-    "price": "Rs. 10"
+    "price": 72
   }
 ]
