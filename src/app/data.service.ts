@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
+import { Observable } from 'rxjs';
+import { IProductDetails } from './iproduct-details';
 
-interface IProductDetails {
-  productId: number,
+interface IProductDetailsData {
+  prodcutId: number,
   weight: string,
   title: string,
-  price: string
+  price: string     
 }
 
 @Injectable({
@@ -13,7 +15,12 @@ interface IProductDetails {
 })
 export class DataService {
   constructor(private http: HttpClient) {}
-  getProductDetails() {
-    return this.http.get('https://raw.githubusercontent.com/mondeChrishiv/monde/master/product_details.json')
+  getProductDetails():Observable<IProductDetails> {
+    return this.http.get<IProductDetailsData>('https://raw.githubusercontent.com/mondeChrishiv/monde/master/product_details.json')
   }
+  private transformProductDetails()
+  {
+
+  }
+
 }
