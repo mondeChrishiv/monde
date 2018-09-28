@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
+import 'hammerjs'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { HeaderComponent } from './header/header.component'
 import { BodyComponent } from './body/body.component'
 import { DataService } from './data.service';
-import { ProductsComponent } from './products/products.component'
+import { ProductsComponent } from './products/products.component';
+import { MaterialModule } from './material.module'
+import { FlexLayoutModule } from '@angular/flex-layout'
+
 
 @NgModule({
   declarations: [
@@ -16,7 +20,7 @@ import { ProductsComponent } from './products/products.component'
     BodyComponent,
     ProductsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MaterialModule,FlexLayoutModule],
   providers: [DataService],
   bootstrap: [AppComponent],
 })
