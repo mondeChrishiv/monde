@@ -10,6 +10,7 @@ import { BodyComponent } from './body/body.component'
 import { DataService } from './data.service';
 import { ProductsComponent } from './products/products.component';
 import { MaterialModule } from './material.module'
+import { MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout'
 
 
@@ -20,7 +21,13 @@ import { FlexLayoutModule } from '@angular/flex-layout'
     BodyComponent,
     ProductsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule, MaterialModule,FlexLayoutModule],
+  imports: [BrowserModule, 
+    AppRoutingModule, 
+    HttpClientModule, 
+    BrowserAnimationsModule, 
+    MaterialModule,
+    MatToolbarModule,
+    FlexLayoutModule],
   providers: [DataService],
   bootstrap: [AppComponent],
 })
