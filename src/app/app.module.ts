@@ -12,6 +12,8 @@ import { ProductsComponent } from './products/products.component';
 import { MaterialModule } from './material.module'
 import { MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms' 
+import { ProductSearchComponent } from './product-search/product-search.component'
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { FlexLayoutModule } from '@angular/flex-layout'
     HeaderComponent,
     BodyComponent,
     ProductsComponent,
+    ProductSearchComponent
   ],
   imports: [BrowserModule, 
     AppRoutingModule, 
@@ -27,7 +30,10 @@ import { FlexLayoutModule } from '@angular/flex-layout'
     BrowserAnimationsModule, 
     MaterialModule,
     MatToolbarModule,
-    FlexLayoutModule],
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [DataService],
   bootstrap: [AppComponent],
 })
